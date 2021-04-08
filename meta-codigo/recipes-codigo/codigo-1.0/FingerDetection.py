@@ -1,6 +1,7 @@
+# NO MOUSE MOVEMENT
 import cv2
 import numpy as np
-import pyautogui
+# import pyautogui
 
 hand_hist = None
 traverse_point = []
@@ -135,16 +136,16 @@ def manage_image_opr(frame, hand_hist):
         print("Centroid : " + str(cnt_centroid) + ", farthest Point : " + str(far_point))
         # usar farthest_point aqui para el mouse
 
-        res = pyautogui.size()
-        xres = res[0]
-        yres = res[1]
+        # res = pyautogui.size()
+        #xres = res[0]
+        #yres = res[1]
 
 
-        if 0 < far_point[0] < 640 and 0 < far_point[1] < 480:
-            puntox = far_point[0] * (xres/640)
-            puntoyf = far_point[1] * (yres/480)
+        #if 0 < far_point[0] < 640 and 0 < far_point[1] < 480:
+            #puntox = far_point[0] * (xres/640)
+            #puntoyf = far_point[1] * (yres/480)
 
-        pyautogui.moveTo(puntox, puntoyf)
+        # pyautogui.moveTo(puntox, puntoyf)
 
 
         #######################################
